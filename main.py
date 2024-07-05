@@ -65,6 +65,6 @@ def get_temperature(city):
         logging.error(f"Unexpected response format from Weather API: {e}")
         raise HTTPException(status_code=500, detail="Unexpected response format from Weather API")
 
-if __name__ == "_main_":
+if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000)
